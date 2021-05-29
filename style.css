@@ -1,0 +1,140 @@
+body, html {
+margin: 0;padding: 0;width: 100%;height: 100%;
+overflow: auto;
+	background-image: radial-gradient(circle, rgb(236, 40, 6), rgba(238, 223, 136, 0.5));
+}
+ 
+h1 , h2 {
+	text-align: center;
+}
+.button {
+margin: 0;
+padding: 0;
+	display: grid;
+	grid-template-columns:  50px 50px;
+	justify-content: center;
+	align-content: center;
+	grid-gap:10px;	
+	height: 50px;
+	background-color: transparent;
+	
+}
+#music{
+	display: inline-block;
+	border: 1px solid rgb(156, 129, 182);
+	color: wheat;
+		border-radius: 5px;
+	margin-left: 230px;
+	background-color: blueviolet;
+}
+#btn {
+	display: inline-block;
+	border-radius: 5px;
+	color: wheat;
+	background-color: blueviolet;
+}
+#btn2 {
+	border-radius: 5px;
+	color: wheat;
+	background-color: blueviolet;
+	
+}
+
+.background {
+	border-radius: 50%;
+	background-color: burlywood;
+	margin-top: 60px;
+	padding: 50px;
+	transform-origin: center;
+	animation: identifier 12s infinite linear;
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
+    grid-auto-rows: 1fr 1fr 1fr;
+	justify-content: center;
+    align-content: center;
+	grid-gap: 20px;
+	/* justify-content: space-around; */
+    /* background-image:  */
+    /* repeating-linear-gradient(
+		45deg,rgb(188, 211, 188), rgb(238, 135, 221) 15px,  red 11px, rgb(74, 230, 170) 10px /* determines size */
+		/* ); */
+	}
+	
+	
+	.richjemima:hover{
+		/* width: 200%; */
+		display: block;
+        box-shadow:
+      12px 13px 22px 18px rgba(166, 236, 116, 0.5);
+      
+transition: .51s;
+} 
+
+.clip {
+	position: relative;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+object-fit: cover;
+
+
+}
+.rich {
+display: block;
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.carosolo{
+	display: block;
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);	
+}
+.jemima {
+	display: block;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+.manjusolo {
+	display: block;	
+		/* display: none;	 */
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.richjemimacaro {
+display: block;	
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+}
+/* background-color: red; */
+/* background: repeating-linear-gradient(45deg , to side-or-corner, red, blue); */
+
+.richjemima {
+		display:block;
+	clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);	
+
+}
+.richjemima ::before{
+	content: "play";
+	left: 50%;
+	top:50%;
+	font-size: 40px;
+	color: #000;
+
+}
+.richfriends {
+	display: block;
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.pandian {
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	display: block;
+	
+	
+
+}
+@keyframes identifier {
+	0%{
+		transform: rotate(0deg)
+	}
+100%{
+	transform: rotate(360deg);
+}
+}
